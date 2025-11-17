@@ -12,22 +12,26 @@
 
         <form action="">
           <div>
-            <label for="Nome">Nome</label>
+            <label for="Nome">Nome (Apenas letras):</label>
             <input
               id="Nome"
               name="Nome"
               type="text"
+              pattern="[a-zA-Z]+"
+              title="Esse input só aceita letras, não aceita números."
               placeholder="*Seu primeiro nome"
+              required
             />
           </div>
 
           <div>
-            <label for="E-mail">E-mail</label>
+            <label for="phone">Telefone</label>
             <input
-              id="E-mail"
-              name="E-mail"
-              type="email"
-              placeholder="*Seu melhor e-mail"
+              id="phone"
+              name="phone"
+              type="number"
+              placeholder="*Seu telefone"
+              required
             />
           </div>
           <button type="submit">Enviar!</button>
