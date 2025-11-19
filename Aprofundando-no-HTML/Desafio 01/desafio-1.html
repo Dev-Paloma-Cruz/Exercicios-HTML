@@ -99,12 +99,15 @@
           código em CSS pode ser visto abaixo:
         </p>
 
-        <p>p { color: blue; text-weight: bold; }</p>
+        <pre><code>
+        p { color: blue; 
+            text-weight: bold; 
+        }</code></pre>
 
         <p>
-          No código acima, utilizamos o seletor "p" para selecionar todos os
-          elementos de parágrafo da página e vamos deixá-los com a cor azul e
-          com uma fonte em negrito.
+          No código acima, utilizamos o seletor <var>p</var> para selecionar
+          todos os elementos de parágrafo da página e vamos deixá-los com a cor
+          azul e com uma fonte em negrito.
         </p>
       </section>
 
@@ -116,8 +119,21 @@
           linguagem:
         </p>
 
-        <p>HTML - HyperText Markup Language - Construção de Páginas</p>
-        <p>CSS - Cascading Style Sheets - Estilização de Páginas</p>
+        <table>
+          <tbody>
+            <tr>
+              <th>HTML</th>
+              <td>Hypertext Markup Language</td>
+              <td>Contrução de Páginas</td>
+            </tr>
+
+            <tr>
+              <th>CSS</th>
+              <td>Cascading Style Sheets</td>
+              <td>Estilização de Páginas</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section>
@@ -125,7 +141,9 @@
 
         <p>
           Um novo contexto de navegação para a página:
-          https://pt.wikipedia.org/wiki/HTML
+          <iframe src="https://pt.wikipedia.org/wiki/HTML" frameborder="0"
+            >Página da Wikpedia</iframe
+          >
         </p>
       </section>
     </main>
@@ -138,23 +156,47 @@
         formulário abaixo:
       </p>
 
-      <p>Nome</p>
-      <p>Preencha seu nome</p>
+      <form action="">
+        <div>
+          <label for="Nome">Nome:</label>
+          <input
+            id="Nome"
+            name="Nome"
+            type="text"
+            pattern="a-zA-Z"
+            title="Esse input só aceita letras, não aceita números."
+            placeholder="Preencha seu nome"
+            required
+          />
+        </div>
 
-      <p>E-mail</p>
-      <p>Preencha seu e-mail</p>
+        <div>
+          <label for="e-mail">E-mail:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Preencha seu e-mail"
+            required
+          />
+        </div>
 
-      <p>Enviar!</p>
+        <button type="submit">Enviar!</button>
+      </form>
 
       <h2>Informações de contato</h2>
-      <p>
-        Facebook:
-        <a href="https://facebook.com/mozilla">https://facebook.com/mozilla</a>
-      </p>
-      <p>
-        Twitter:
-        <a href="https://twitter.com/mozilla">https://twitter.com/mozilla</a>
-      </p>
+      <address>
+        <p>
+          Facebook:
+          <a href="https://facebook.com/mozilla"
+            >https://facebook.com/mozilla</a
+          >
+        </p>
+        <p>
+          Twitter:
+          <a href="https://twitter.com/mozilla">https://twitter.com/mozilla</a>
+        </p>
+      </address>
     </footer>
   </body>
 </html>
