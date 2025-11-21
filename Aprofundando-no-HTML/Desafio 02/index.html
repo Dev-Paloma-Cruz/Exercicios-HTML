@@ -767,21 +767,40 @@
       </section>
 
       <!-- Seção Minicurso -->
+      <section>
+        <h2>
+          Cadastre-se e receba um
+          <span class="realce-semibold">minicurso de graça</span>!
+        </h2>
 
-      <h2>
-        Cadastre-se e receba um
-        <span class="realce-semibold">minicurso de graça</span>!
-      </h2>
+        <form action="">
+          <div>
+            <label for="name">Nome</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              pattern="[a-zA-Z]"
+              title="Esse input só aceita letras, não aceita números."
+              placeholder="*Seu primeiro nome"
+              required
+            />
+          </div>
 
-      <p>Nome</p>
+          <div>
+            <label for="e-mail">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="*Seu melhor e-mail"
+              required
+            />
+          </div>
 
-      <p>CAMPO DO FORMULÁRIO</p>
-
-      <p>E-mail</p>
-
-      <p>CAMPO DO E-MAIL</p>
-
-      <p>BOTÃO DE ENVIAR</p>
+          <button type="submit">Enviar!</button>
+        </form>
+      </section>
     </main>
 
     <!-- Rodapé -->
