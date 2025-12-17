@@ -1,0 +1,45 @@
+/* Padrão */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #303030;
+}
+
+.flex {
+  display: flex;
+
+  & .wrap {
+    flex-flow: row wrap;
+  }
+
+  &.col {
+    flex-flow: column;
+
+    &.wrap {
+      flex-flow: colum-wrap;
+    }
+  }
+}
+
+/* Carrossel */
+
+.section {
+  padding: 6.1rem;
+  justify-content: center;
+}
+
+.carrossel {
+  max-width: 100rem;
+}
